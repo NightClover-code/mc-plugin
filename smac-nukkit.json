@@ -1,0 +1,27 @@
+{
+	"name": "mc-plugin-nukkit",
+	"version": "1.0.0",
+	"keywords": ["scriptcraft", "scriptcraft-sma", "server"],
+	"author": "",
+	"license": "ISC",
+	"smaServerConfig": {
+		"dockerTag": "latest",
+		"serverName": "mc-plugin-nukkit",
+		"serverType": "nukkit",
+		"memory": "1024",
+		"node_modules": true,
+		"bind": [
+			{
+				"src": "./",
+				"dst": "scriptcraft-plugins/mc-plugin"
+			},
+			{
+				"src": "./node_modules/@magikcraft/op-all",
+				"dst": "scriptcraft-plugins/@magikcraft/op-all"
+			}
+		]
+	},
+	"dependencies": {
+		"@magikcraft/op-all": "^1.0.0"
+	}
+}
